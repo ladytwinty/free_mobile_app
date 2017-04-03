@@ -31,15 +31,33 @@ html, body
 body
 	font-size: 16px
 	min-width: 320px
+	height: 100%
 	position: relative
-	line-height: 1.75
+	//line-height: 1.75
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
+	background-image: url("../img/bg1.jpg")
+	background-repeat: no-repeat
+	background-size: cover
 
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
-
-@import "media" // Всегда в конце
+.logo
+	margin-top: 7%
+	img
+		display: block
+		max-width: 150px
+		height: auto
+		margin: 0 auto
+.title
+	margin-top: 7%
+	text-align: center
+	text-transform: uppercase
+	color: #002b41
+	.title_top
+		font-weight: 900
+		font-size: 38px
+		margin-bottom: 10px
+	.title_bottom
+		font-size: 18px
+		margin-top: 10px
+@import "media"
