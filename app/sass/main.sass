@@ -1,5 +1,5 @@
-@import "libs"
 @import "topnews"
+@import "libs"
 @import "fonts"
 @import "vars"
 
@@ -47,11 +47,16 @@ body
 
 .logo
 	margin-top: 4%
+	a
+		text-decoration: none
 	img
 		display: block
 		max-width: 150px
 		height: auto
 		margin: 0 auto
+		transition: .5s all
+		&:hover
+			opacity: .8
 .title
 	margin-top: 5%
 	text-align: center
@@ -104,10 +109,5 @@ body
 	left: 50%
 	top: 50%
 	position: absolute
-
-
-
-
-
 
 @import "media"
